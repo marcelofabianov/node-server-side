@@ -4,6 +4,8 @@ const requireDir = require("require-dir");
 
 const app = express();
 
+app.use(express.json());
+
 mongoose.connect("mongodb://localhost:27017/rocket01", {
   useNewUrlParser: true,
   useUnifiedTopology: true
